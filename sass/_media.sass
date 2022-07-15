@@ -23,7 +23,7 @@
 			width: 340px
 @media ( max-width: 768px )
 	.container
-		// max-width: 576px 
+		// max-width: 576px
 		width: 92%
 	.navbar
 		&__search, &-menu, &__user
@@ -41,11 +41,24 @@
 			align-items: center
 			justify-content: space-between
 			flex-direction: column
-
 			&__line
 				width: 16px
 				height: 1px
 				background-color: $text-color
+	.stars
+		flex-basis: content
+	.hotel
+		&-name
+			flex-basis: 100%
+		&-wrapper
+			justify-content: space-between
+		&-info
+			&__rating
+				display: none
+			&__offer
+				order: -1
+				margin-left: 0px
+
 @media ( max-width: 576px )
 	.container
 		// max-width: 480px
