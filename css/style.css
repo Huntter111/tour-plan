@@ -25,12 +25,12 @@ img {
   justify-content: space-between;
   padding: 40px 0 40px 0;
 }
+.navbar-top__menu-button {
+  display: none;
+}
 .navbar__search {
   margin-right: auto;
   margin-left: 108px;
-}
-.navbar__menu-button {
-  display: none;
 }
 .navbar-menu {
   list-style-type: none;
@@ -457,7 +457,6 @@ template {
   }
   .navbar__search {
     margin-left: auto;
-    max-width: 340px;
   }
   .navbar-menu {
     padding: 22px 0px 23px 0px;
@@ -465,6 +464,9 @@ template {
   .navbar-menu__link {
     font-size: 12px;
     line-height: 15px;
+  }
+  .search__input {
+    width: 340px;
   }
 }
 @media (max-width: 768px) {
@@ -476,6 +478,7 @@ template {
     display: none;
   }
   .menu-button {
+    padding: 0;
     width: 16px;
     height: 11px;
     border: none;
