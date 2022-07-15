@@ -12,6 +12,10 @@ body {
   max-width: 1110px;
 }
 
+img {
+  max-width: 100%;
+}
+
 .navbar {
   background-color: #ffffff;
 }
@@ -24,6 +28,9 @@ body {
 .navbar__search {
   margin-right: auto;
   margin-left: 108px;
+}
+.navbar__menu-button {
+  display: none;
 }
 .navbar-menu {
   list-style-type: none;
@@ -442,6 +449,9 @@ template {
   .container {
     max-width: 700px;
   }
+  .logo {
+    width: 132px;
+  }
   .navbar-top {
     padding: 30px 0px 30px 0px;
   }
@@ -461,5 +471,29 @@ template {
   .container {
     max-width: 576px;
     width: 92%;
+  }
+  .navbar__search, .navbar-menu, .navbar__user {
+    display: none;
+  }
+  .menu-button {
+    width: 16px;
+    height: 11px;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .menu-button__line {
+    width: 16px;
+    height: 1px;
+    background-color: #333333;
+  }
+}
+@media (max-width: 576px) {
+  .logo {
+    width: 99px;
   }
 }/*# sourceMappingURL=style.css.map */
